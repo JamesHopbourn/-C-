@@ -10,7 +10,7 @@
 #   Manual        : 命令行输入数字参数编译数字开头的源文件，如果不加任何参数默认全部重新编译。
 # ====================================================
 
-find . -type f -not -iname "*.*" -delete
+find . -maxdepth 1 -type f -not -iname "*.*" -delete
 
 echo -e "Start compiling...\n"
 for file in $(find . -maxdepth 1 -name "$1*.c"|sort -g|xargs basename)
