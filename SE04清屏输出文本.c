@@ -12,6 +12,7 @@ int main(int argc, char const *argv[]) {
   printf("%*s 3. 删除学生信息 \n", 30, "");
   printf("%*s 4. 查询学生信息 \n", 30, "");
   printf("%*s 5. 学生成绩导入 \n", 30, "");
+  printf("%*s 0. 退出管理系统 \n", 30, "");
   printf("\n");
   printf("%*s 请输入数字选择功能：", 30, "");
   scanf("%d", &i);
@@ -35,6 +36,10 @@ int main(int argc, char const *argv[]) {
 
   case 5:
     printf("5\n");
+    break;
+
+  case 0:
+    exit(0);
     break;
 
   default:
