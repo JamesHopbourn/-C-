@@ -4,6 +4,7 @@
 int main(int argc, char const *argv[]) {
   int i;
   system("clear");
+  printf("\n\n\n\n\n\n\n\n\n");
   printf("%*s \033[36m欢迎使用学生信息管理系统 by:James Hopbourn\033[0m \n", 30,
          "");
   printf("\n");
@@ -43,7 +44,7 @@ int main(int argc, char const *argv[]) {
     break;
 
   default:
-    printf("error\n");
+    printf("输入错误，请重新输入！\n");
     break;
   }
   return 0;

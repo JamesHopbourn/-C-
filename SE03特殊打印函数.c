@@ -18,4 +18,3 @@ int main() {
   printf("内存地址 %p\n", &no);
   return 0;
 }
-
