@@ -11,6 +11,7 @@
 # ====================================================
 
 find . -maxdepth 1 -type f -not -iname "*.*" -delete
+find ./build -maxdepth 1 -type f -not -iname "*.*" -delete
 
 echo -e "Start compiling...\n"
 for file in $(find . -maxdepth 1 -name "$1*.c"|sort -g|xargs basename)
