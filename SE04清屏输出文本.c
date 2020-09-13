@@ -4,13 +4,13 @@
 int main(int argc, char const *argv[]) {
   int i;
   system("clear");
-  printf("\t\t\t\t 欢迎使用学生信息管理系统 v1.0 by:James Hopbourn \t\t\t\t\n");
-  printf("\t\t\t\t\t\t 1. 添加学生信息 \t\t\t\t\t\t\n");
-  printf("\t\t\t\t\t\t 2. 修改学生信息 \t\t\t\t\t\t\n");
-  printf("\t\t\t\t\t\t 3. 删除学生信息 \t\t\t\t\t\t\n");
-  printf("\t\t\t\t\t\t 4. 查询学生信息 \t\t\t\t\t\t\n");
-  printf("\t\t\t\t\t\t 5. 学生成绩导入 \t\t\t\t\t\t\n");
-  printf("\t\t\t\t 请输入数字选择功能：");
+  printf("%*s 欢迎使用学生信息管理系统 v1.0 by:James Hopbourn \n\n", 30, "");
+  printf("%*s 1. 添加学生信息 \n", 30, "");
+  printf("%*s 2. 修改学生信息 \n", 30, "");
+  printf("%*s 3. 删除学生信息 \n", 30, "");
+  printf("%*s 4. 查询学生信息 \n", 30, "");
+  printf("%*s 5. 学生成绩导入 \n\n", 30, "");
+  printf("%*s 请输入数字选择功能：", 30, "");
   scanf("%d", &i);
   system("clear");
   switch (i) {
