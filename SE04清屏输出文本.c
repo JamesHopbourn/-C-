@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,6 +18,12 @@ int main(int argc, char const *argv[]) {
   printf("\n");
   printf("%*s 请输入数字选择功能：", 30, "");
   scanf("%d", &i);
+  // if (isalpha(i) == '1') {
+  //   printf("输入错误，请重新输入！\n");
+  //   scanf("%d", &i);
+  // }
+  printf("%d\n", isalpha(i));
+  exit;
   system("clear");
   switch (i) {
   case 1:

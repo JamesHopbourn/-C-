@@ -8,6 +8,11 @@ extern void enter_string(char str[]);
 extern void delete_string(char str[], char ch);
 extern void print_string(char str[]);
 
+// extern 和 static 对比
+// static void enter_string(char str[]);
+// static void delete_string(char str[], char ch);
+// static void print_string(char str[]);
+
 int main(int argc, char const *argv[]) {
   char c;
   static char str[80];
