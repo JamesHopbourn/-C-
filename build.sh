@@ -30,7 +30,7 @@ done
 echo -e "\nCompile done"
 
 if [[ $1 != '0' ]]; then
-	echo -e "\nExecute result"
+	echo -e "\n\033[32mExecute result\033[0m"
 	./build/$1*
     exit 0
 fi
