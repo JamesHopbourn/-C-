@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[]) {
   int a[N];
   int i, j, k, temp;
-  printf("请输入一个数组，以空格作为元素间隔：");
+  printf("请输入一个数组，以空格间隔：");
   for (i = 0; i < N; i++)
     scanf("%d", &a[i]);
   for (i = N - 1; i >= 1; i--) {

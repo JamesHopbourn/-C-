@@ -12,3 +12,12 @@ int main(int argc, char const *argv[]) {
   printf("- Size of 'c':               %2ld bytes\n", sizeof('c'));
   return 0;
 }
+
+/*
+Execute result
+- Size of `5.0`:              8 bytes
+- Size of `float`:            4 bytes
+- Size of `int`:              4 bytes
+- Size of `char`:             1 bytes
+- Size of 'c':                4 bytes
+*/

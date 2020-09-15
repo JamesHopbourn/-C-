@@ -10,5 +10,7 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-// if不要带花括号，否则在输入小写字母的情况下不会有任何输出，因为 printf
-// 会被包在 if 的花括号里面
+/*
+if不要带花括号，否则在输入小写字母的情况下不会有任何输出，因为 printf
+ 会被包在 if 的花括号里面
+*/
