@@ -18,8 +18,8 @@ int main(int argc, char *argv[]) {
   // 参数分别为，coonnect连接句柄，host是MySQL所在主机或地址，user用户名，password密码，database_name数据库名，后面的都是默认
   coonnect = mysql_real_connect(coonnect, "127.0.0.1", "root", "123456",
                                 "phpdb", 0, NULL, 0);
-
-  if (coonnect) { // 连接成功
+  // 连接成功
+  if (coonnect) {
     printf("connect success!\n");
   } else {
     printf("connect failed!\n");

@@ -3,12 +3,9 @@
 int SumAndMinus(int a, int b, int *p);
 
 int main() {
-  int a = 10;
-  int b = 5;
-  int sum;
-  int minus;
+  int a = 10, b = 5, sum, minus;
   sum = SumAndMinus(a, b, &minus);
-  printf("sum=%d,minus=%d\n", sum, minus);
+  printf("相加=%d   相减=%d\n", sum, minus);
   return 0;
 }
 
