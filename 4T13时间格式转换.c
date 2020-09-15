@@ -11,7 +11,8 @@ int main(int argc, char const *argv[]) {
     printf("时间 %d:%d AM\n", hour, minute);
   } else if (hour == 12)
   /*
-  12点需要单独处理，因为如果放在上面的输出中会变成 12:10 AM，放在下面的输出中会变成 00:10 PM
+  12点需要单独处理，因为如果放在上面的输出中会变成 12:10
+  AM，放在下面的输出中会变成 00:10 PM
   */
   {
     printf("时间 %d:%d PM\n", hour, minute);

@@ -38,7 +38,7 @@ i++.s
 100003f8a: mov    eax,ecx
 100003f8c: add    rsp,0x20
 100003f90: pop    rbp
-100003f91: ret    
+100003f91: ret
 
 
 ++i.s
@@ -67,5 +67,5 @@ i++.s
 100003f8a: mov    eax,ecx
 100003f8c: add    rsp,0x20
 100003f90: pop    rbp
-100003f91: ret    
+100003f91: ret
 */
