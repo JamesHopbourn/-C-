@@ -22,8 +22,13 @@ int main(int argc, char const *argv[]) {
     else
       k++;
   }
-  printf("a[i]>b[i] %d次\na[i]=b[i] %d次\na[i]<b[i] %d次\n", n, m, k);
+  printf("a[i]>b[i] %d次\
+          a[i]=b[i] %d次\
+          a[i]<b[i] %d次\n",
+         n, m, k);
+
   printf("\n");
+
   if (n > k)
     printf("第一个数组大于第二个数组\n");
   else if (n < k)
