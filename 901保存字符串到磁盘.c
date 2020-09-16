@@ -13,7 +13,7 @@ int main() {
   printf("请输入文件名：");
   gets(filename);
 
-  fp = fopen("/Users/james/Desktop/password", "w");
+  fp = fopen(filename, "w");
   if (fp == NULL) {
     printf("无法打开文件\n");
     exit(1);

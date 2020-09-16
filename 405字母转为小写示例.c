@@ -6,7 +6,7 @@ int main(int argc, char const *argv[]) {
   strings = getchar();
   if (strings >= 'A' && strings <= 'Z')
     strings = strings + 32;
-  printf("%c\n\n", strings);
+  printf("%c\n", strings);
   return 0;
 }
 
