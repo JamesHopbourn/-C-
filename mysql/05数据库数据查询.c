@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void finish_with_error(MYSQL *con) {
+  fprintf(stderr, "%s\n", mysql_error(con));
+  mysql_close(con);
+  exit(1);
+}
+
 int main(int argc, char *argv[]) {
   char host[20];
   char username[20];
@@ -11,31 +17,48 @@ int main(int argc, char *argv[]) {
   sprintf(host, "127.0.0.1");
   sprintf(username, "root");
   sprintf(password, "123456");
-  sprintf(database, "phpdb");
+  sprintf(database, "testdb");
 
   MYSQL *connect;
-
-  // 步骤1： 初始化连接句柄
   connect = mysql_init(NULL);
 
-  // 如果返回NULl说明初始化失败
   if (connect == NULL) {
     printf("mysql_init failed!\n");
     exit(0);
   }
 
-  // 步骤2：实际进行连接
-  // 参数分别为，connect连接句柄，host是MySQL所在主机或地址，user用户名，password密码，database_name数据库名，后面的都是默认
   connect = mysql_real_connect(connect, host, username, password, database, 0,
                                NULL, 0);
-  // 连接成功
   if (connect) {
     printf("connect success!\n");
   } else {
     printf("connect failed!\n");
   }
 
-  // 步骤3： 退出前关闭连接
+  if (mysql_query(connect, "SELECT * FROM Cars")) {
+    finish_with_error(connect);
+  }
+
+  MYSQL_RES *result = mysql_store_result(connect);
+
+  if (result == NULL) {
+    finish_with_error(connect);
+  }
+
+  int num_fields = mysql_num_fields(result);
+
+  MYSQL_ROW row;
+
+  while ((row = mysql_fetch_row(result))) {
+    for (int i = 0; i < num_fields; i++) {
+      printf("%s ", row[i] ? row[i] : "NULL");
+    }
+    printf("\n");
+  }
+
+  mysql_free_result(result);
+
   mysql_close(connect);
+
   return 0;
 }
