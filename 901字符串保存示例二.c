@@ -9,11 +9,11 @@ int main() {
   fptr = fopen("/Users/james/Desktop/password", "w");
 
   if (fptr == NULL) {
-    printf("Error!");
+    printf("无法打开文件!");
     exit(1);
   }
 
-  printf("Enter num: ");
+  printf("输入数字: ");
   scanf("%d", &num);
 
   fprintf(fptr, "%d", num);

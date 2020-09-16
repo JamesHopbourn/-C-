@@ -10,7 +10,7 @@ int main() {
   fp = fopen(filename, "r");
   if (fp == NULL) {
     printf("无法打开文件\n");
-    exit(0);
+    exit(1);
   }
 
   for (;(ch=fgetc(fp)!=EOF;)

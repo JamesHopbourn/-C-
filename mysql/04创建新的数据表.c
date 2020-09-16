@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void finish_with_error(MYSQL *con)
-{
+void finish_with_error(MYSQL *con) {
   fprintf(stderr, "%s\n", mysql_error(con));
   mysql_close(con);
-  exit(1);        
+  exit(1);
 }
 
 int main(int argc, char *argv[]) {
@@ -24,16 +23,16 @@ int main(int argc, char *argv[]) {
   connect = mysql_init(NULL);
 
   if (connect == NULL) {
-    printf("mysql_init failed!\n");
+    printf("数据库连接初始化失败\n");
     exit(0);
   }
 
   connect = mysql_real_connect(connect, host, username, password, database, 0,
                                NULL, 0);
   if (connect) {
-    printf("connect success!\n");
+    printf("数据库连接成功\n");
   } else {
-    printf("connect failed!\n");
+    printf("数据库连接失败\n");
   }
 
   if (mysql_query(connect, "DROP TABLE IF EXISTS Cars")) {
@@ -76,6 +75,5 @@ int main(int argc, char *argv[]) {
     finish_with_error(connect);
   }
 
-  mysql_close(connect);
   return 0;
 }

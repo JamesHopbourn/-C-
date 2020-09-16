@@ -24,19 +24,21 @@ int main(int argc, char *argv[]) {
   connect = mysql_init(NULL);
 
   if (connect == NULL) {
-    printf("mysql_init failed!\n");
+    printf("数据库连接初始化失败\n");
     exit(0);
   }
 
   connect = mysql_real_connect(connect, host, username, password, database, 0,
                                NULL, 0);
   if (connect) {
-    printf("connect success!\n");
+    printf("数据库连接成功\n");
   } else {
-    printf("connect failed!\n");
+    printf("数据库连接失败\n");
   }
+
   // 这里会被 clang-fromat 错误格式化
-  if (mysql_query(connect, "select * from `Cars` where `Id` = '2';select * from `Cars` where `Name` = 'Bentley'")) {
+  if (mysql_query(connect, "select * from `Cars` where `Id` = '2';select * "
+                           "from `Cars` where `Name` = 'Bentley'")) {
     finish_with_error(connect);
   }
 
@@ -58,6 +60,5 @@ int main(int argc, char *argv[]) {
 
   } while (status == 0);
 
-  mysql_close(connect);
   return 0;
 }

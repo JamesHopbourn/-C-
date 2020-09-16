@@ -22,8 +22,6 @@ int main(int argc, char const *argv[]) {
   //   printf("输入错误，请重新输入！\n");
   //   scanf("%d", &i);
   // }
-  printf("%d\n", isalpha(i));
-  exit;
   system("clear");
   switch (i) {
   case 1:

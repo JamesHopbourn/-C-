@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// scanf 函数接收地址应该是变量地址，而不是变量名
-
 int main(int argc, char const *argv[]) {
   int i, j;
   float x, y, z;

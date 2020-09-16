@@ -16,10 +16,9 @@ int main(int argc, char const *argv[]) {
 
   fp = fopen("./stu.txt", "wb+");
   if (fp == NULL) {
-    printf("无法打开文件，按任意键退出\n");
+    printf("无法打开文件！\n");
     // getch() 函数无法使用
-    system("read -n 1 -s -p \"Press any key to continue...\"");
-    exit(0);
+    exit(1);
   }
 
   printf("输入学生数据，名字 学号 年龄 地址：\n");

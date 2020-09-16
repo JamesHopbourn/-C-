@@ -11,7 +11,7 @@ int main(int argc, char const *argv[]) {
   fp = fopen(filename, "w");
   if (fp == NULL) {
     printf("无法打开文件\n");
-    exit(0);
+    exit(1);
   }
 
   printf("请输入字符串：");

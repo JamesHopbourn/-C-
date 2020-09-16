@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 
   // 如果返回NULl说明初始化失败
   if (connect == NULL) {
-    printf("mysql_init failed!\n");
+    printf("数据库连接初始化失败\n");
     exit(0);
   }
 
@@ -30,9 +30,9 @@ int main(int argc, char *argv[]) {
                                NULL, 0);
   // 连接成功
   if (connect) {
-    printf("connect success!\n");
+    printf("数据库连接成功\n");
   } else {
-    printf("connect failed!\n");
+    printf("数据库连接失败\n");
   }
 
   // 步骤3： 退出前关闭连接
