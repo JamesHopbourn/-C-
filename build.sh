@@ -10,6 +10,8 @@
 #   Manual        : 命令行输入数字参数编译数字开头的源文件，如果不加任何参数默认全部重新编译。
 # ====================================================
 
+find . -maxdepth 1 -type f -iname "*.txt" -delete
+find . -maxdepth 1 -type f -iname "*.out" -delete
 find . -maxdepth 1 -type f -not -iname "*.*" -delete
 find ./build -maxdepth 1 -type f -not -iname "*.*" -delete
 
