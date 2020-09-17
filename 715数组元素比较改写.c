@@ -4,7 +4,7 @@ int compare(int x, int y);
 
 int main(int argc, char const *argv[]) {
   int a[10], b[10], i, n = 0, m = 0, k = 0;
-  
+
   printf("请输入第一个数组，以空格间隔：");
   for (i = 0; i < 10; i++)
     scanf("%d", &a[i]);
@@ -45,5 +45,5 @@ int compare(int x, int y) {
   flag = x > y ? 1 : -1;
   if (x == y)
     flag = 0;
-return (flag);
+  return (flag);
 }
