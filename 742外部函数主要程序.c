@@ -1,8 +1,7 @@
-#include <stdio.h>
-
 #include "include/742外部函数删除字符.c"
 #include "include/742外部函数打印字符.c"
 #include "include/742外部函数输入字符.c"
+#include <stdio.h>
 
 extern void enter_string(char str[]);
 extern void delete_string(char str[], char ch);
