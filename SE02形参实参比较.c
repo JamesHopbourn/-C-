@@ -1,12 +1,7 @@
 #include <stdio.h>
-//计算从m加到n的值
-int sum(int m, int n) {
-  int i;
-  for (i = m + 1; i <= n; ++i) {
-    m += i;
-  }
-  return m;
-}
+
+int sum(int m, int n);
+
 int main() {
   int a, b, total;
   printf("Input two numbers: ");
@@ -15,6 +10,15 @@ int main() {
   printf("a=%d, b=%d\n", a, b);
   printf("total=%d\n", total);
   return 0;
+}
+
+//计算从m加到n的值
+int sum(int m, int n) {
+  int i;
+  for (i = m + 1; i <= n; ++i) {
+    m += i;
+  }
+  return m;
 }
 
 // 在这段代码中，函数定义处的 m、n 是形参，函数调用处的 a、b 是实参。通过
