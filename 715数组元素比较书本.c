@@ -4,6 +4,7 @@ int compare(int x, int y);
 
 int main(int argc, char const *argv[]) {
   int a[10], b[10], i, n = 0, m = 0, k = 0;
+  
   printf("请输入第一个数组，以空格间隔：");
   for (i = 0; i < 10; i++)
     scanf("%d", &a[i]);
@@ -22,6 +23,7 @@ int main(int argc, char const *argv[]) {
     else
       k++;
   }
+
   printf("a[i]>b[i] %d次\
           a[i]=b[i] %d次\
           a[i]<b[i] %d次\n",
