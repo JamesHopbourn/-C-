@@ -6,9 +6,29 @@
 #   Email         : JamesHopbourn@gmail.com
 #   File Name     : build.sh
 #   Last Modified : 2020-09-05 19:56
-#   Describe      : 《C 语言程序设计教程》自动化编译脚本
+#   Describe      : MySQL 程序自动化编译脚本
 #   Manual        : 命令行输入数字参数编译数字开头的源文件，如果不加任何参数默认全部重新编译。
 # ====================================================
+
+if ! [ -x "$(command -v gcc)" ]; then
+  echo 'gcc is not installed' >&2
+  exit 1
+fi
+
+if ! [ -x "$(command -v mysql)" ]; then
+  echo 'mysql@5.7 is not installed' >&2
+  exit 1
+fi
+
+if ! [ -x "$(command -v clang-format)" ]; then
+  echo 'clang-format is not installed' >&2
+  exit 1
+fi
+
+if [ ! -d "/usr/local/opt/mysql-client" ]; then
+  echo 'mysql-client is not installed' >&2
+  exit 1
+fi
 
 find . -maxdepth 1 -type f -not -iname "*.*" -delete
 find ./build -maxdepth 1 -type f -not -iname "*.*" -delete

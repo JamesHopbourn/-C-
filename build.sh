@@ -10,6 +10,16 @@
 #   Manual        : 命令行输入数字参数编译数字开头的源文件，如果不加任何参数默认全部重新编译。
 # ====================================================
 
+if ! [ -x "$(command -v clang)" ]; then
+  echo 'clang is not installed' >&2
+  exit 1
+fi
+
+if ! [ -x "$(command -v clang-format)" ]; then
+  echo 'clang-format is not installed' >&2
+  exit 1
+fi
+
 find . -maxdepth 1 -type f -iname "*.txt" -delete
 find . -maxdepth 1 -type f -iname "*.out" -delete
 find . -maxdepth 1 -type f -not -iname "*.*" -delete
