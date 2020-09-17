@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[]) {
   int i, count, number;
-  printf("请输入一个三位的整数：");
+  printf("请输入一个整数：");
   scanf("%d", &i);
 
   printf("反向输出：");
@@ -12,7 +12,8 @@ int main(int argc, char const *argv[]) {
     ++count;
     printf("%d", number);
   }
-  
-  printf("\n数字位数：%d\n", count);
+  printf("\n");
+
+  printf("数字位数：%d\n", count);
   return 0;
 }
