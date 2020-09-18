@@ -11,5 +11,5 @@ int main()
 /*
 gcc -shared -o libadd.so add.c
 
-gcc -o main SE16动态库的引用.c -L./include/ -ladd
+gcc -o main SE00动态库的引用.c -L./include/ -ladd
 */
