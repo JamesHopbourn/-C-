@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[]) {
   int n = 0;
   for (int i = 0; i < 200; i++) {
-    if ((i % 7 != 0) && (i % 9 != 0))
+    if ((i % 7 != 0) | (i % 9 != 0))
       continue;
     printf("%5d  ", i);
     n++;
