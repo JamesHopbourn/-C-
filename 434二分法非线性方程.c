@@ -11,7 +11,7 @@ int main(int argc, char const *argv[]) {
   } while (fa * fb >= 0);
 
   do {
-    c = (a + b) / 2;
+    c  = (a + b) / 2;
     fc = ((c + 1.1) * c + 0.9) * c - 1.4;
     fa = ((a + 1.1) * a + 0.9) * a - 1.4;
     if (fc * fa > 0)

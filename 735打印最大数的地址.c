@@ -13,9 +13,7 @@ int main(int argc, char const *argv[]) {
 }
 
 int *fun(int *x, int *y, int *z) {
-  if (*x >= *y && *x >= *z)
-    return (x);
-  if (*y >= *x && *y >= *z)
-    return (y);
+  if (*x >= *y && *x >= *z) return (x);
+  if (*y >= *x && *y >= *z) return (y);
   return (z);
 }

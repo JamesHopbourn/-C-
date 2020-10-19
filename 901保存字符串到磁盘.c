@@ -9,7 +9,7 @@ error: implicitly declaring library function 'exit' with type 'void (int)
 
 int main() {
   FILE *fp;
-  char strings, filename[20];
+  char  strings, filename[20];
   printf("请输入文件名：");
   gets(filename);
 
@@ -20,8 +20,7 @@ int main() {
   }
 
   printf("请输入文件内容，以@符号结束：");
-  for (; (strings = getchar()) != '@';)
-    fputc(strings, fp);
+  for (; (strings = getchar()) != '@';) fputc(strings, fp);
 
   fclose(fp);
   return 0;

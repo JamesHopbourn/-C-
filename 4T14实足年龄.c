@@ -2,8 +2,8 @@
 #include <time.h>
 
 int main(int argc, char const *argv[]) {
-  int Y1, M1, D1;
-  int Y2, M2, D2;
+  int    Y1, M1, D1;
+  int    Y2, M2, D2;
   time_t seconds;
   seconds = time(NULL);
   printf("自 1970-01-01 起的小时数 = %ld\n", seconds / 3600);

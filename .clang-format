@@ -1,0 +1,14 @@
+BasedOnStyle: Google
+
+# 缩进字符数
+IndentWidth:	2
+
+# 允许函数声明的所有参数在放在下一行
+AlignTrailingComments:	true
+
+# 允许排序#include
+SortIncludes:	true
+
+AlignConsecutiveAssignments: true
+
+AlignConsecutiveDeclarations: true

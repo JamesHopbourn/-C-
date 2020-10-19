@@ -6,13 +6,11 @@ int main(int argc, char const *argv[]) {
   int a[10], b[10], i, n = 0, m = 0, k = 0;
 
   printf("请输入第一个数组，以空格间隔：");
-  for (i = 0; i < 10; i++)
-    scanf("%d", &a[i]);
+  for (i = 0; i < 10; i++) scanf("%d", &a[i]);
   printf("\n");
 
   printf("请输入第二个数组，以空格间隔：");
-  for (i = 0; i < 10; i++)
-    scanf("%d", &b[i]);
+  for (i = 0; i < 10; i++) scanf("%d", &b[i]);
   printf("\n");
 
   for (i = 0; i < 10; i++) {
@@ -24,10 +22,11 @@ int main(int argc, char const *argv[]) {
       k++;
   }
 
-  printf("a[i]>b[i] %d次\
+  printf(
+      "a[i]>b[i] %d次\
           a[i]=b[i] %d次\
           a[i]<b[i] %d次\n",
-         n, m, k);
+      n, m, k);
 
   printf("\n");
 

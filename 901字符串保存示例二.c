@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-  int num;
+  int   num;
   FILE *fptr;
 
   fptr = fopen("/Users/james/Desktop/password", "w");

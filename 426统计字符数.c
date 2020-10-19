@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int n;
+  int  n;
   char strings;
   printf("输入一串字符：");
   for (n = 0; (strings = getchar()) != '\n'; n++)

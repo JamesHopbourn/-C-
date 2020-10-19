@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]) {
   scanf("%d", &x);
   for (i = 0; i < 15; i++) {
     if (a[i] == x) {
-      flag = 1;
+      flag   = 1;
       findat = i;
       break;
     }

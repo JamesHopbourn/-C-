@@ -7,13 +7,11 @@ int main(int argc, char const *argv[]) {
   scanf("%d", &n);
   for (i = 1; i <= n; i++) {
     temp = a[0];
-    for (j = 0; j <= 7; j++)
-      a[j] = a[j + 1];
+    for (j = 0; j <= 7; j++) a[j] = a[j + 1];
     a[8] = temp;
   }
 
-  for (i = 0; i < 9; i++)
-    printf("%4d", a[i]);
+  for (i = 0; i < 9; i++) printf("%4d", a[i]);
   printf("\n");
   return 0;
 }

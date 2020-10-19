@@ -27,8 +27,9 @@ int main() {
   printf("- Size of `unsigned long`:     %2ld bytes (%ld bits)\n",
          sizeof(unsigned long), sizeof(unsigned long) * 8);
   printf("\n");
-  printf("Note that the following are equivalent -- the first is a shorthand "
-         "for the second:\n");
+  printf(
+      "Note that the following are equivalent -- the first is a shorthand "
+      "for the second:\n");
   printf("\n");
   printf("- `short` and `short int`\n");
   printf("- `unsigned` and `unsigned int`\n");

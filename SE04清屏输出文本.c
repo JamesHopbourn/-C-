@@ -20,33 +20,33 @@ int main(int argc, char const *argv[]) {
   scanf("%d", &i);
   system("clear");
   switch (i) {
-  case 1:
-    printf("1\n");
-    break;
+    case 1:
+      printf("1\n");
+      break;
 
-  case 2:
-    printf("2\n");
-    break;
+    case 2:
+      printf("2\n");
+      break;
 
-  case 3:
-    printf("3\n");
-    break;
+    case 3:
+      printf("3\n");
+      break;
 
-  case 4:
-    printf("4\n");
-    break;
+    case 4:
+      printf("4\n");
+      break;
 
-  case 5:
-    printf("5\n");
-    break;
+    case 5:
+      printf("5\n");
+      break;
 
-  case 0:
-    exit(0);
-    break;
+    case 0:
+      exit(0);
+      break;
 
-  default:
-    printf("输入错误，请重新输入！\n");
-    break;
+    default:
+      printf("输入错误，请重新输入！\n");
+      break;
   }
   return 0;
 }

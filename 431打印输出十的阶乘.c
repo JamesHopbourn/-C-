@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int i, n = 10, j;
+  int   i, n = 10, j;
   float s = 0, t;
   for (i = 1; i <= n; i++) {
     for (t = 1, j = 1; j <= i; j++) {

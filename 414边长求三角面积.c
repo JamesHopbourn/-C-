@@ -6,7 +6,7 @@ int main(int argc, char const *argv[]) {
   printf("请输入三边边长，以空格分隔：");
   scanf("%f %f %f", &a, &b, &c);
   if (a + b > c && a + c > b && b + c > a) {
-    s = (a + b + c) / 2;
+    s    = (a + b + c) / 2;
     area = sqrt(s * (s - a) * (s - b) * (s - c));
     printf("三角形面积是：%7.2f\n", area);
   } else

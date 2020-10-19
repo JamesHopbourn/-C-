@@ -2,8 +2,8 @@
 
 int main(int argc, char const *argv[]) {
   int a = 100, *pa, **ppa;
-  pa = &a;
-  ppa = &pa;
+  pa    = &a;
+  ppa   = &pa;
   printf("%d %u %u\n", a, pa, ppa);
   printf("%d %d %d\n", a, *pa, **ppa);
   printf("%u %u %u\n", &a, pa, *ppa);
