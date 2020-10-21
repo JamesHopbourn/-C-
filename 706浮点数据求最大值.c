@@ -10,4 +10,6 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-int max(float x, float y) { return (x > y ? x : y); }
+int max(float x, float y) {
+  return (x > y ? x : y);
+}

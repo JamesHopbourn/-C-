@@ -42,6 +42,7 @@ int main(int argc, char const *argv[]) {
 int compare(int x, int y) {
   int flag;
   flag = x > y ? 1 : -1;
-  if (x == y) flag = 0;
+  if (x == y)
+    flag = 0;
   return (flag);
 }

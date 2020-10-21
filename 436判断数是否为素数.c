@@ -6,7 +6,8 @@ int main(int argc, char const *argv[]) {
   scanf("%d", &m);
   k = m / 2;
   for (i = 2; i <= k; i++)
-    if (m % i == 0) break;
+    if (m % i == 0)
+      break;
   if (i > k)
     printf("%d 是素数\n", m);
   else

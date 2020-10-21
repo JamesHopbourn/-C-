@@ -24,6 +24,6 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  /* code */
+  printf("佛祖保佑       永无BUG     永不修改\n");
   return 0;
 }

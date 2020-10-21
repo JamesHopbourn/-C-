@@ -5,7 +5,7 @@ int main(int argc, char const *argv[]) {
   int   n, k, sign;
   printf("输入 n 和 x，以空格间隔：");
   scanf("%d %d", &n, &x);
-  sum  = x;
+  sum = x;
   term = x;
   sign = 1;
   for (k = 2; k <= n; k++) {

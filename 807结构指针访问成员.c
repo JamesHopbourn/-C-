@@ -14,8 +14,8 @@ int main(int argc, char const *argv[]) {
   p = &student;
   strcpy(student.name, "James Bond");
   student.number = 1007;
-  student.age    = 18;
-  student.sex    = 'M';
+  student.age = 18;
+  student.sex = 'M';
   printf("名字：%s  学号：%d  年龄：%d  性别：%c\n", student.name,
          student.number, student.age, student.sex);
   printf("名字：%s  学号：%d  年龄：%d  性别：%c\n", (*p).name, (*p).number,
