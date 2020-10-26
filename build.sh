@@ -24,6 +24,7 @@ find . -maxdepth 1 -type f -iname "*.txt" -delete
 find . -maxdepth 1 -type f -iname "*.out" -delete
 find . -maxdepth 1 -type f -not -iname "*.*" -delete
 find ./build -maxdepth 1 -type f -not -iname "*.*" -delete
+find -iname "*.md" -exec sed -i 's/[[:space:]]$//g ; s/$/  /g' {} \;
 
 echo -e "Start compiling...\n"
 for file in $(find . -maxdepth 1 -name "$1*.c"|sort -g|xargs /usr/bin/basename)

@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
-	// short int 取值范围：-32768~32767
-	// 下面是正确的示例
-	short int short_int = 32767;
-	printf("%hd\n", short_int);
+int main(int argc, char const *argv[]) {
+  // short int 取值范围：-32768~32767
+  // 下面是正确的示例
+  short int short_int = 32767;
+  printf("%hd\n", short_int);
 
-	// 下面是 short int 错误示例，会导致溢出
-	// 打印结果：-32767，实际上是 32769
-	short int short_int_overflow = 32769;
-	printf("%hd\n", short_int_overflow);
+  // 下面是 short int 错误示例，会导致溢出
+  // 打印结果：-32767，实际上是 32769
+  short int short_int_overflow = 32769;
+  printf("%hd\n", short_int_overflow);
 
-	// int 取值范围：-2147483647~2147483647
-	int int_number = 40000;
-	printf("%d\n", int_number);
+  // int 取值范围：-2147483647~2147483647
+  int int_number = 40000;
+  printf("%d\n", int_number);
 }
 
 /*
