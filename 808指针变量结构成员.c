@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 struct Student {
-  int   number;
+  int number;
   char *name;
 };
 

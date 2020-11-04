@@ -3,7 +3,7 @@
 void swap(int *pa, int *pb);
 
 int main(int argc, char const *argv[]) {
-  int  a, b;
+  int a, b;
   int *pa, *pb;
   printf("请输入两个整数，以空格间隔：");
   scanf("%d %d", &a, &b);

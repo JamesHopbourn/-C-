@@ -2,9 +2,9 @@
 #include <string.h>
 
 struct Student {
-  int  number;
+  int number;
   char name[20];
-  int  age;
+  int age;
   char sex;
 };
 

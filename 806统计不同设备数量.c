@@ -3,13 +3,13 @@
 
 struct Device {
   char type;
-  int  count;
+  int count;
 };
 
 int main(int argc, char const *argv[]) {
   struct Device array[] = {'A', 0, 'B', 0, 'C', 0};
-  int           i, j;
-  char          device_type;
+  int i, j;
+  char device_type;
   printf("输入设备类型，按回车继续输入\n");
   for (i = 0; i <= N; i++) {
     scanf("%c", &device_type);

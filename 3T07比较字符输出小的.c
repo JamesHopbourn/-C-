@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main( ) {
   char a, b;
   printf("请输入两个字母，以空格间隔：");
   scanf("%c %c", &a, &b);

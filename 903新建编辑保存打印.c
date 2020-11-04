@@ -4,7 +4,7 @@
 
 int main(int argc, char const *argv[]) {
   FILE *fp;
-  char  filename[10], string[81];
+  char filename[10], string[81];
   printf("请输入文件名：");
   gets(filename);
 

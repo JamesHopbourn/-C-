@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int   num1, num2, sum;
+  int num1, num2, sum;
   float aver;
   printf("请输入两个整数，以空格间隔：");
   scanf("%d %d", &num1, &num2);

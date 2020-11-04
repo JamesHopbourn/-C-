@@ -3,14 +3,14 @@
 
 struct stu {
   char name[10];
-  int  num;
-  int  age;
+  int num;
+  int age;
   char addr[15];
 } boya[2], boyb[2], *pp, *qq;
 
 int main(int argc, char const *argv[]) {
   FILE *fp;
-  int   i;
+  int i;
   pp = boya;
   qq = boyb;
 

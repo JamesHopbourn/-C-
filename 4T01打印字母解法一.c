@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main( ) {
   // 打印上三角形
   int i, j;
   for (i = 0; i < 8; i++) {

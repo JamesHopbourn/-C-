@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[]) {
   char grade;
   printf("请输入一个等级字母：");
-  grade = getchar();
+  grade = getchar( );
   grade = (grade >= 'a' && grade <= 'z') ? grade - 32 : grade;
   switch (grade) {
     case 'A':

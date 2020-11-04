@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int    s;
+  int s;
   double n, t, pi;
   pi = 0;
   t = 1;    //序列的第一项

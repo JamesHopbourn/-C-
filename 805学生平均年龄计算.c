@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 struct Student {
-  int  number;
+  int number;
   char name[9];
-  int  age;
+  int age;
 } stu[4] = {{1011, "莉莉", 21},
             {1022, "李红", 23},
             {1023, "王伟", 22},

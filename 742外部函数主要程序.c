@@ -14,7 +14,7 @@ extern void print_string(char str[]);
 // static void print_string(char str[]);
 
 int main(int argc, char const *argv[]) {
-  char        c;
+  char c;
   static char str[80];
   printf("请输入字符串：");
   enter_string(str);

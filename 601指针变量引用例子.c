@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int  a = 20;
+  int a = 20;
   int *pa;
   pa = &a;
   printf("a   = %d\n", a);

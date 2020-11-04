@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main( ) {
   int n, c, k;
   printf("Enter an integer in decimal number system\n");
   scanf("%d", &n);

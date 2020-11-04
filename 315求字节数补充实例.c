@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+int main( ) {
   printf("# C Data Types\n");
   printf("## Integer Types\n");
   printf("- Size of `char`:              %2ld bytes (%ld bits)\n", sizeof(char),

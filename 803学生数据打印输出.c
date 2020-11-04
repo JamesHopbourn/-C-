@@ -7,10 +7,10 @@ struct Date {
 };
 
 struct Student {
-  int         number;
-  char        name[9];
-  int         age;
-  char        sex;
+  int number;
+  char name[9];
+  int age;
+  char sex;
   struct Date brithday1;
 };
 

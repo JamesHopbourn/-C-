@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int    i = 1, n;
+  int i = 1, n;
   double π = 0;
   printf("请输入迭代次数：");
   scanf("%d", &n);

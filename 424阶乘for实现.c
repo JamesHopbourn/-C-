@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int   i, n;
+  int i, n;
   float p = 1;
   printf("请输入一个实数：");
   scanf("%d", &n);

@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int    i;
-  float  f;
+  int i;
+  float f;
   double d;
-  char   ch;
+  char ch;
   printf("%f\n", ch / i + f * d - (f + i));
   return 0;
 }

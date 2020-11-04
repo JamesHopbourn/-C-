@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int   number;
+  int number;
   float a, b, c, max;
   printf("请选择要比较的数字个数 2 或 3：");
   scanf("%d", &number);

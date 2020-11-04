@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int  a, b, c;
+  int a, b, c;
   int *pmax, *pmin;
   printf("请输入三个数字，以空格间隔：");
   scanf("%d %d %d", &a, &b, &c);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  char  str[] = "This is a string";
+  char str[] = "This is a string";
   char *string;
   string = str;
   printf("数组输出：%s\n", str);

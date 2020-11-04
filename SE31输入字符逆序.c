@@ -4,7 +4,7 @@
 
 void Reverse(char str[]);
 
-int main() {
+int main( ) {
   char str[100];
   printf("Input a string:");
   gets(str);
@@ -13,8 +13,8 @@ int main() {
 }
 
 void Reverse(char str[]) {
-  int  n = strlen(str);
-  int  i;
+  int n = strlen(str);
+  int i;
   char temp;
   for (i = 0; i < (n / 2); i++) {
     temp = str[i];

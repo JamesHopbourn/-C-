@@ -3,7 +3,7 @@
 #define PI 3.14159
 
 int main(int argc, char const *argv[]) {
-  int   r;
+  int r;
   float s;
   printf("请输入圆的半径：");
   scanf("%d", &r);

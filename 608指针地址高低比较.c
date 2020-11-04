@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  int  a[5] = {5, 20, 8, 6, 13};
+  int a[5] = {5, 20, 8, 6, 13};
   int *p1, *p2, *p3;
 
   p1 = &a[1], p2 = &a[3];

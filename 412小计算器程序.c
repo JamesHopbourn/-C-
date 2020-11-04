@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[]) {
   float a, b;
-  char  strings;
+  char strings;
   printf("请输入计算表达式：");
   scanf("%f%c%f", &a, &strings, &b);
   switch (strings) {

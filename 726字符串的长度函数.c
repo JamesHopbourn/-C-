@@ -4,7 +4,7 @@ int StringLen(char s[]);
 
 int main(int argc, char const *argv[]) {
   char str[80];
-  int  StringLength;
+  int StringLength;
   printf("请输入一个字符串：");
   gets(str);
   StringLength = StringLen(str);

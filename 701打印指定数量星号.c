@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-void star();              //输出特定数量的星号
+void star( );             //输出特定数量的星号
 void star_number(int n);  //输出指定数量的星号
 
 int main(int argc, char const *argv[]) {
-  star();
+  star( );
   star_number(6);
   star_number(12);
   star_number(6);
-  star();
+  star( );
   return 0;
 }
 
-void star() {
+void star( ) {
   int i = 1;
   for (i = 0; i < 18; i++) printf("*");
   printf("\n");

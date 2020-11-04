@@ -2,8 +2,8 @@
 #include <string.h>
 
 int main(int argc, char const *argv[]) {
-  int    i;
-  char * ps[6] = {"FORTRAN", "PASCAL", "BASIC", "COBOL", "C", "C++"}, s[20];
+  int i;
+  char *ps[6] = {"FORTRAN", "PASCAL", "BASIC", "COBOL", "C", "C++"}, s[20];
   char **pp = ps;
   printf("请输入要查找的字符：");
   gets(s);

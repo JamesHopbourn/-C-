@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(int argc, char const *argv[]) {
-  int  start, length;
+  int start, length;
   char str[100];
   printf("请输入字符：");
   gets(str);

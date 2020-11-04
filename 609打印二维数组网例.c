@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 例子来源 https://www.runoob.com/cprogramming/c-multi-dimensional-arrays.html
-int main() {
+int main( ) {
   /* 一个带有 5 行 2 列的数组 */
   int a[5][2] = {{0, 0}, {1, 2}, {2, 4}, {3, 6}, {4, 8}};
   int i, j;
