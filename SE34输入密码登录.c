@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <openssl/sha.h>
 /*
 TODO
 getpass 函数星号密码
-混淆密码
+
+gcc -I/usr/local/Cellar/openssl@1.1/1.1.1f/include/ -L/usr/local/Cellar/openssl@1.1/1.1.1f/lib/ -lcrypto
 */
 
 int main( ) {
