@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, char const *argv[])
+{
+    int numA,numB,result,length,temp;
+    int flag = 0;
+    scanf("%d %d", &numA, &numB);
+
+    result = numA * numB;
+    length = 1 + (int)log10(result);
+    
+    for (int i = 0; i < length; i++)
+    {
+        // 余 10 输出最后一个
+        temp = result%10;
+
+        if (temp > 0){
+            printf("%d", temp);
+            flag = 1;
+        }else if(flag != 0)
+        {
+            printf("%d", temp);
+        }
+
+        // 除以 10 进入下一轮
+        result = result/10;
+    }
+}
