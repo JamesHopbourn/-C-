@@ -15,6 +15,7 @@ int main(int argc, char const *argv[]) {
 double mypow(double x, double y) {
   int i;
   double z = 1.0;
-  for (i = 1; i <= y; i++) z = z * x;
+  for (i = 1; i <= y; i++)
+    z = z * x;
   return z;
 }

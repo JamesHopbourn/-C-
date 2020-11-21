@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-int main( ) {
+int main() {
   int a = 1;
   printf("a=%d; b=%d; c=%d; d=%d; e=%d; f=%d; g=%d; h=%d", 1, 2, 3, 4, 5, 6, 7,
          8);

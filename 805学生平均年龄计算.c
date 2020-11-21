@@ -11,7 +11,8 @@ struct Student {
 
 int main(int argc, char const *argv[]) {
   float ave, s = 0;
-  for (int i = 0; i < 4; i++) s += stu[i].age;
+  for (int i = 0; i < 4; i++)
+    s += stu[i].age;
   printf("s=%f\n", s);
   ave = s / 4;
   printf("平均年龄：%f\n", ave);

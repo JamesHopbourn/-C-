@@ -11,6 +11,4 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-int add(int x, int y) {
-  return (x + y);
-}
+int add(int x, int y) { return (x + y); }

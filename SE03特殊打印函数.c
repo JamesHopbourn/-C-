@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main( ) {
+int main() {
   int x;
   char ch = 'A';
   char str[20] = "www.runoob.com";

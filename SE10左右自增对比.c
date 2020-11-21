@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-  for (int i = 0; i < 10; i++) printf("%d ", i);
+  for (int i = 0; i < 10; i++)
+    printf("%d ", i);
   printf("\n");
 
-  for (int j = 0; j < 10; ++j) printf("%d ", j);
+  for (int j = 0; j < 10; ++j)
+    printf("%d ", j);
   printf("\n");
   return 0;
 }

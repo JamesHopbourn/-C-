@@ -13,7 +13,8 @@ int main(int argc, char const *argv[]) {
 int bin(int x) {
   {
     unsigned i;
-    for (i = 1 << 31; i > 0; i = i / 2) (x & i) ? printf("1") : printf("0");
+    for (i = 1 << 31; i > 0; i = i / 2)
+      (x & i) ? printf("1") : printf("0");
   }
   printf("\n");
 }

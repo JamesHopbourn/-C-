@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[]) {
   char strings;
   printf("输入一个字母：");
-  strings = getchar( );
+  strings = getchar();
   if (strings >= 'A' && strings <= 'Z')
     strings = strings + 32;
   printf("%c\n", strings);

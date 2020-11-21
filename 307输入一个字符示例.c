@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[]) {
   char input;
-  input = getchar( );
+  input = getchar();
   putchar(input);
   return 0;
 }

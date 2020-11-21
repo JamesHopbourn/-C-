@@ -11,7 +11,8 @@ int main(int argc, char const *argv[]) {
     a[(N - 1) - i] = temp;
   }
 
-  for (i = 0; i < N; i++) printf("%4d ", a[i]);
+  for (i = 0; i < N; i++)
+    printf("%4d ", a[i]);
   printf("\n");
   return 0;
 }

@@ -15,6 +15,7 @@ int main(int argc, char const *argv[]) {
 float myfac(int n) {
   int i;
   float y = 1;
-  for (i = 1; i <= n; i++) y = y * i;
+  for (i = 1; i <= n; i++)
+    y = y * i;
   return y;
 }

@@ -9,6 +9,7 @@ int main(int argc, char const *argv[]) {
     pa++;
   }
   pa = a;
-  for (i = 0; i < 5; i++) printf("a[%d] = %d\n", i, *pa++);
+  for (i = 0; i < 5; i++)
+    printf("a[%d] = %d\n", i, *pa++);
   return 0;
 }

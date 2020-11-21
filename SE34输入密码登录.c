@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <string.h>
-#include <openssl/sha.h>
 /*
 TODO
+
 getpass 函数星号密码
 
-gcc -I/usr/local/Cellar/openssl@1.1/1.1.1f/include/ -L/usr/local/Cellar/openssl@1.1/1.1.1f/lib/ -lcrypto
+#include <openssl/sha.h>
+gcc -I/usr/local/Cellar/openssl@1.1/1.1.1f/include/
+-L/usr/local/Cellar/openssl@1.1/1.1.1f/lib/ -lcrypto
 */
 
-int main( ) {
+int main() {
   FILE *fp;
   // 检测登陆记录文件存在性
   fp = fopen("/Users/James/Desktop/test.txt", "r");

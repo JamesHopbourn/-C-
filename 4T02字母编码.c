@@ -5,7 +5,7 @@ int main(int argc, char const *argv[]) {
   char CapitalLetter;
   char LowerCaseLetter;
   printf("输入一个字母：");
-  strings = getchar( );
+  strings = getchar();
   if (strings >= 'A' && strings <= 'Z') {
     CapitalLetter = strings;
     strings = strings + 32;

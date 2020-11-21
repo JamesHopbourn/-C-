@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int dif(int x, int y, int z);  // 做差函数
-int max(int x, int y, int z);  // 取最大值
-int min(int x, int y, int z);  // 取最小值
+int dif(int x, int y, int z); // 做差函数
+int max(int x, int y, int z); // 取最大值
+int min(int x, int y, int z); // 取最小值
 
 int main(int argc, char const *argv[]) {
   int a, b, c, result;

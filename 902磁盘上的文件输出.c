@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main( ) {
+int main() {
   FILE *fp;
   char ch, filename[20];
   printf("请输入文件名：");

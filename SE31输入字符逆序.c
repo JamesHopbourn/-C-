@@ -4,7 +4,7 @@
 
 void Reverse(char str[]);
 
-int main( ) {
+int main() {
   char str[100];
   printf("Input a string:");
   gets(str);

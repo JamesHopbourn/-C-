@@ -12,7 +12,8 @@ int main(int argc, char const *argv[]) {
   }
   while (counter) {
     temp = 1;
-    for (i = 1; i <= counter - 1; i++) temp *= 10;
+    for (i = 1; i <= counter - 1; i++)
+      temp *= 10;
     printf("%d ", num / temp);
     num %= temp;
     counter--;

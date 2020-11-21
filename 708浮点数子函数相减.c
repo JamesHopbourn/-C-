@@ -10,6 +10,4 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-float sub(float x, float y) {
-  return (x - y);
-}
+float sub(float x, float y) { return (x - y); }
